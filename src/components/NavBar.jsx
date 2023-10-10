@@ -19,8 +19,12 @@ export default function NavBar() {
 
       {/* menu */}
       <ul className="hidden md:flex">
-        <li className="px-4 cursor-pointer">Home</li>
-        <li className="px-4 cursor-pointer">About</li>
+        <a href="#home">
+          <li className="px-4 cursor-pointer">Home</li>
+        </a>
+        <a href="#about">
+          <li className="px-4 cursor-pointer">About</li>
+        </a>
         <li className="px-4 cursor-pointer">Experience</li>
         <li className="px-4 cursor-pointer">Skills</li>
         <li className="px-4 cursor-pointer">Contact</li>
@@ -52,14 +56,16 @@ export default function NavBar() {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="www.linkedin.com/in/xuanan-yue-210751184"
+              target="_blank"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
-              href="/"
+              href="https://github.com/King23WL"
+              target="_blank"
               className="flex justify-between items-center w-full text-gray-300"
             >
               GitHub <FaGithub size={30} />

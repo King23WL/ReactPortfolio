@@ -3,14 +3,14 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 
 export default function Home() {
   return (
-    <div name="home" className="bg-[#0a192f] w-full h-screen">
+    <div id="home" className="bg-[#0a192f] w-full h-screen">
       {/* container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <p className="text-[#209CEE]">Hi, my name is</p>
-        <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
-          Xuanan Yue
+        <p className="text-[#209CEE] animate-bounce">Hi, my name is</p>
+        <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6] animate-fade-right animate-once">
+          Xuan'an Yue
         </h1>
-        <h2 className="text-3xl sm:text-6xl font-bold text-[#8892b0]">
+        <h2 className="text-3xl sm:text-6xl font-bold text-[#8892b0] animate-fade-left animate-once animate-delay-300">
           I'm a Software Engineer,
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
@@ -18,7 +18,10 @@ export default function Home() {
           industrial automation solutions.
         </p>
         <div>
-          <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#209CEE] hover:border-[#209CEE]">
+          <button
+            className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#209CEE] hover:border-[#209CEE]"
+            disabled
+          >
             View More
             <span className="group-hover:rotate-90 duration-300">
               <HiArrowNarrowRight className="ml-3" />
