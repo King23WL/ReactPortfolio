@@ -1,9 +1,13 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import myPhoto from "../assets/personal-photo.jpg";
 
-export default function About() {
+const About = forwardRef(function About(_props, ref) {
   return (
-    <div id="about" className="w-full h-screen bg-[#0a192f] text-gray-300">
+    <div
+      id="about"
+      className="w-full h-screen bg-[#0a192f] text-gray-300"
+      ref={ref}
+    >
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="sm:text-right pb-8 pl-4">
           <p className="text-4xl font-bold inline border-b-4 border-[#209CEE]">
@@ -60,4 +64,6 @@ export default function About() {
       </div>
     </div>
   );
-}
+});
+
+export default About;

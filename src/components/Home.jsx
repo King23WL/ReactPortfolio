@@ -1,7 +1,7 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
-export default function Home() {
+export default function Home({ onClick }) {
   return (
     <div id="home" className="bg-[#0a192f] w-full h-screen">
       {/* container */}
@@ -20,7 +20,7 @@ export default function Home() {
         <div>
           <button
             className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#209CEE] hover:border-[#209CEE]"
-            disabled
+            onClick={onClick}
           >
             View More
             <span className="group-hover:rotate-90 duration-300">
