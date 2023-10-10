@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react";
+import NavBar from "./components/NavBar";
 
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-center text-red-500">
-      Hello world!
-    </h1>
-  )
+    <>
+      <NavBar />
+      <h1>Hello</h1>
+    </>
+  );
 }
-
