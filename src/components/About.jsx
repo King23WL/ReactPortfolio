@@ -24,7 +24,7 @@ export default function About() {
             <li className="border-l-2 animate-fade-down animate-once animate-ease-out">
               <p className="md:text-2xl">
                 In 2020, I graduated from <br />
-                <span className="text-[#7C878E] font-bold text-3xl">
+                <span className="text-[#ffffff] font-bold text-3xl">
                   UConn
                 </span>{" "}
                 <br />
@@ -36,7 +36,7 @@ export default function About() {
               <p className="md:text-2xl">
                 I received my Master's Degree in Electrical & Computer
                 Engineering from <br />
-                <span className="text-[#2D68C4] font-bold text-4xl">
+                <span className="text-[#2774AE] font-bold text-4xl">
                   UCLA
                 </span>{" "}
                 <br />
