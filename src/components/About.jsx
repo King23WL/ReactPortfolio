@@ -1,7 +1,16 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useRef } from "react";
 import myPhoto from "../assets/personal-photo.jpg";
+import { useIsVisible } from "../utility/useIsVisible";
 
 const About = forwardRef(function About(_props, ref) {
+  const ref1 = useRef();
+  const isVisible1 = useIsVisible(ref1);
+  const ref2 = useRef();
+  const isVisible2 = useIsVisible(ref2);
+  const ref3 = useRef();
+  const isVisible3 = useIsVisible(ref3);
+  const ref4 = useRef();
+  const isVisible4 = useIsVisible(ref4);
   return (
     <div
       id="about"
@@ -18,14 +27,24 @@ const About = forwardRef(function About(_props, ref) {
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="flex justify-end ml-5">
             <img
+              ref={ref1}
               src={myPhoto}
               alt="my-photo"
-              className="rounded-lg shadow-xl max-h-[500px] w-auto animate-fade animate-once animate-delay-150"
+              className={`rounded-lg shadow-xl max-h-[500px] w-auto ${
+                isVisible1 ? "animate-fade animate-once animate-delay-150" : ""
+              }`}
             />
           </div>
 
           <ul className="flex flex-col justify-between">
-            <li className="border-l-2 animate-fade-down animate-once animate-ease-out">
+            <li
+              ref={ref2}
+              className={`border-l-2 ${
+                isVisible2
+                  ? "animate-fade-down animate-once animate-ease-out"
+                  : ""
+              }`}
+            >
               <p className="md:text-2xl">
                 In 2020, I graduated from <br />
                 <span className="text-[#ffffff] font-bold text-3xl">
@@ -36,7 +55,14 @@ const About = forwardRef(function About(_props, ref) {
               </p>
             </li>
             <br />
-            <li className="border-l-2 animate-fade-down animate-once animate-ease-out animate-delay-500">
+            <li
+              ref={ref3}
+              className={`border-l-2 ${
+                isVisible3
+                  ? "animate-fade-down animate-once animate-ease-out animate-delay-500"
+                  : ""
+              }`}
+            >
               <p className="md:text-2xl">
                 I received my Master's Degree in Electrical & Computer
                 Engineering from <br />
@@ -48,7 +74,14 @@ const About = forwardRef(function About(_props, ref) {
               </p>
             </li>
             <br />
-            <li className="border-l-2 animate-fade-down animate-once animate-ease-out animate-delay-1000">
+            <li
+              ref={ref4}
+              className={`border-l-2  ${
+                isVisible4
+                  ? "animate-fade-down animate-once animate-ease-out animate-delay-1000"
+                  : ""
+              }`}
+            >
               <p className="md:text-2xl">
                 Now, I'm a Software Engineer at <br />
                 <span className="text-[#f9b500] font-bold text-4xl">N</span>
