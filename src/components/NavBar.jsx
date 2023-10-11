@@ -32,7 +32,9 @@ export default function NavBar() {
         <a href="#skills">
           <li className="px-4 cursor-pointer">Skills</li>
         </a>
-        <li className="px-4 cursor-pointer">Contact</li>
+        <a href="#contact">
+          <li className="px-4 cursor-pointer">Contact</li>
+        </a>
       </ul>
 
       {/* hamburger */}

@@ -31,7 +31,9 @@ const Experience = forwardRef(function Experience(_props, ref) {
               src={myPhoto}
               alt="my-photo"
               className={`rounded-lg shadow-xl max-h-[500px] w-auto ${
-                isVisible1 ? "animate-fade animate-once animate-delay-150" : ""
+                isVisible1
+                  ? "animate-fade animate-once animate-delay-[250ms]"
+                  : ""
               }`}
             />
           </div>
@@ -41,7 +43,7 @@ const Experience = forwardRef(function Experience(_props, ref) {
               ref={ref2}
               className={`border-l-2 ${
                 isVisible2
-                  ? "animate-fade-down animate-once animate-ease-out"
+                  ? "animate-fade-down animate-once animate-ease-out animate-delay-[250ms]"
                   : ""
               }`}
             >
@@ -59,7 +61,7 @@ const Experience = forwardRef(function Experience(_props, ref) {
               ref={ref3}
               className={`border-l-2 ${
                 isVisible3
-                  ? "animate-fade-down animate-once animate-ease-out animate-delay-500"
+                  ? "animate-fade-down animate-once animate-ease-out animate-delay-[550ms]"
                   : ""
               }`}
             >
@@ -78,7 +80,7 @@ const Experience = forwardRef(function Experience(_props, ref) {
               ref={ref4}
               className={`border-l-2  ${
                 isVisible4
-                  ? "animate-fade-down animate-once animate-ease-out animate-delay-1000"
+                  ? "animate-fade-down animate-once animate-ease-out animate-delay-[850ms]"
                   : ""
               }`}
             >

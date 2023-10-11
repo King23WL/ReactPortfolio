@@ -23,7 +23,7 @@ export default function About() {
               ref={ref1}
               className={`${
                 isVisible1
-                  ? "animate-flip-down animate-once animate-ease-in"
+                  ? "animate-flip-down animate-once animate-ease-in animate-delay-[250ms]"
                   : ""
               }`}
             >

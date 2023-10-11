@@ -15,7 +15,9 @@ export default function Home({ onClick }) {
         <h1
           ref={ref1}
           className={`text-4xl sm:text-7xl font-bold text-[#ccd6f6] ${
-            isVisible1 ? "animate-fade-right animate-once" : ""
+            isVisible1
+              ? "animate-fade-right animate-once animate-delay-[250ms]"
+              : ""
           }`}
         >
           Xuan'an Yue
@@ -23,7 +25,7 @@ export default function Home({ onClick }) {
         <h2
           ref={ref2}
           className={`text-3xl sm:text-6xl font-bold text-[#8892b0] ${
-            isVisible2 ? "animate-fade-left animate-once animate-delay-300" : ""
+            isVisible2 ? "animate-fade-left animate-once animate-delay-500" : ""
           }`}
         >
           I'm a Software Engineer,
