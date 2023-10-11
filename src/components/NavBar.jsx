@@ -7,6 +7,7 @@ import Logo from "../assets/android-chrome-192x192.png";
 export default function NavBar() {
   const [navIsOpen, setNavIsOpen] = useState(false);
   const handleClick = () => setNavIsOpen(!navIsOpen);
+  const handleMobileNavClick = (element) => {};
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div>
@@ -25,8 +26,12 @@ export default function NavBar() {
         <a href="#about">
           <li className="px-4 cursor-pointer">About</li>
         </a>
-        <li className="px-4 cursor-pointer">Experience</li>
-        <li className="px-4 cursor-pointer">Skills</li>
+        <a href="#experience">
+          <li className="px-4 cursor-pointer">Experience</li>
+        </a>
+        <a href="#skills">
+          <li className="px-4 cursor-pointer">Skills</li>
+        </a>
         <li className="px-4 cursor-pointer">Contact</li>
       </ul>
 
