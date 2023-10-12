@@ -24,28 +24,33 @@ export default function NavBar() {
       {/* menu */}
       <ul className={"hidden md:flex"}>
         <Link to="home" smooth={true} duration={300}>
-          <li className="px-4 cursor-pointer">Home</li>
+          <li className="px-4 cursor-pointer hover:text-[#209CEE]">Home</li>
         </Link>
 
         <Link to="about" smooth={true} duration={300}>
-          <li className="px-4 cursor-pointer">About</li>
+          <li className="px-4 cursor-pointer hover:text-[#209CEE]">About</li>
         </Link>
 
         <Link to="experience" smooth={true} duration={300}>
-          <li className="px-4 cursor-pointer">Experience</li>{" "}
+          <li className="px-4 cursor-pointer hover:text-[#209CEE]">
+            Experience
+          </li>{" "}
         </Link>
 
         <Link to="skills" smooth={true} duration={300}>
-          <li className="px-4 cursor-pointer">Skills</li>
+          <li className="px-4 cursor-pointer hover:text-[#209CEE]">Skills</li>
         </Link>
 
         <Link to="contact" smooth={true} duration={300}>
-          <li className="px-4 cursor-pointer">Contact</li>{" "}
+          <li className="px-4 cursor-pointer hover:text-[#209CEE]">Contact</li>{" "}
         </Link>
       </ul>
 
       {/* hamburger */}
-      <div className="md:hidden z-10 cursor-pointer" onClick={handleClick}>
+      <div
+        className="md:hidden z-10 cursor-pointer hover:bg-[#209CEE] p-1 rounded-full"
+        onClick={handleClick}
+      >
         {navIsOpen ? <FaTimes /> : <FaBars />}
       </div>
 
@@ -57,17 +62,17 @@ export default function NavBar() {
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center "
         }
       >
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:bg-[#209CEE] rounded">
           <Link to="home" smooth={true} duration={300} onClick={handleClick}>
             Home
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:bg-[#209CEE] rounded">
           <Link to="about" smooth={true} duration={300} onClick={handleClick}>
             About
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:bg-[#209CEE] rounded">
           <Link
             to="experience"
             smooth={true}
@@ -77,12 +82,12 @@ export default function NavBar() {
             Experience
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:bg-[#209CEE] rounded">
           <Link to="skills" smooth={true} duration={300} onClick={handleClick}>
             Skills
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:bg-[#209CEE] rounded">
           <Link to="contact" smooth={true} duration={300} onClick={handleClick}>
             Contact
           </Link>
