@@ -23,25 +23,25 @@ export default function NavBar() {
 
       {/* menu */}
       <ul className={"hidden md:flex"}>
-        <Link to="home" smooth={true} duration={300}>
+        <Link to="home" smooth={true} duration={500}>
           <li className="px-4 cursor-pointer hover:text-[#209CEE]">Home</li>
         </Link>
 
-        <Link to="about" smooth={true} duration={300}>
+        <Link to="about" smooth={true} duration={500}>
           <li className="px-4 cursor-pointer hover:text-[#209CEE]">About</li>
         </Link>
 
-        <Link to="experience" smooth={true} duration={300}>
+        <Link to="experience" smooth={true} duration={500}>
           <li className="px-4 cursor-pointer hover:text-[#209CEE]">
             Experience
           </li>
         </Link>
 
-        <Link to="skills" smooth={true} duration={300}>
+        <Link to="skills" smooth={true} duration={500}>
           <li className="px-4 cursor-pointer hover:text-[#209CEE]">Skills</li>
         </Link>
 
-        <Link to="contact" smooth={true} duration={300}>
+        <Link to="contact" smooth={true} duration={500}>
           <li className="px-4 cursor-pointer hover:text-[#209CEE]">Contact</li>
         </Link>
       </ul>
@@ -63,12 +63,12 @@ export default function NavBar() {
         }
       >
         <li className="py-6 text-4xl hover:bg-[#209CEE] rounded">
-          <Link to="home" smooth={true} duration={300} onClick={handleClick}>
+          <Link to="home" smooth={true} duration={500} onClick={handleClick}>
             Home
           </Link>
         </li>
         <li className="py-6 text-4xl hover:bg-[#209CEE] rounded">
-          <Link to="about" smooth={true} duration={300} onClick={handleClick}>
+          <Link to="about" smooth={true} duration={500} onClick={handleClick}>
             About
           </Link>
         </li>
@@ -76,19 +76,19 @@ export default function NavBar() {
           <Link
             to="experience"
             smooth={true}
-            duration={300}
+            duration={500}
             onClick={handleClick}
           >
             Experience
           </Link>
         </li>
         <li className="py-6 text-4xl hover:bg-[#209CEE] rounded">
-          <Link to="skills" smooth={true} duration={300} onClick={handleClick}>
+          <Link to="skills" smooth={true} duration={500} onClick={handleClick}>
             Skills
           </Link>
         </li>
         <li className="py-6 text-4xl hover:bg-[#209CEE] rounded">
-          <Link to="contact" smooth={true} duration={300} onClick={handleClick}>
+          <Link to="contact" smooth={true} duration={500} onClick={handleClick}>
             Contact
           </Link>
         </li>

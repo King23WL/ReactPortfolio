@@ -36,7 +36,7 @@ export default function Home() {
           industrial automation solutions.
         </p>
         <div>
-          <Link to="about" smooth={true} duration={300}>
+          <Link to="about" smooth={true} duration={500}>
             <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#209CEE] hover:border-[#209CEE] rounded">
               View More
               <span className="group-hover:rotate-90 duration-300">
