@@ -7,7 +7,7 @@ export default function About() {
   const isVisible1 = useIsVisible(ref1);
   const isVisible2 = useIsVisible(ref2);
   return (
-    <div id="about" className="w-full h-screen bg-[#0a192f] text-gray-300">
+    <div name="about" className="w-full h-screen bg-[#0a192f] text-gray-300">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
@@ -23,7 +23,7 @@ export default function About() {
               ref={ref1}
               className={`${
                 isVisible1
-                  ? "animate-flip-down animate-once animate-ease-in animate-delay-[250ms]"
+                  ? "animate-fade-right animate-once animate-delay-[250ms]"
                   : ""
               }`}
             >
@@ -36,7 +36,7 @@ export default function About() {
               ref={ref2}
               className={`${
                 isVisible2
-                  ? "animate-flip-up animate-once animate-ease-in animate-delay-500"
+                  ? "animate-fade-left animate-once animate-delay-[500ms]"
                   : ""
               }`}
             >

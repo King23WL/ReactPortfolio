@@ -1,8 +1,8 @@
-import React, { forwardRef, useRef } from "react";
+import React, { useRef } from "react";
 import myPhoto from "../assets/personal-photo.jpg";
 import { useIsVisible } from "../utility/useIsVisible";
 
-const Experience = forwardRef(function Experience(_props, ref) {
+function Experience() {
   const ref1 = useRef();
   const isVisible1 = useIsVisible(ref1);
   const ref2 = useRef();
@@ -13,9 +13,8 @@ const Experience = forwardRef(function Experience(_props, ref) {
   const isVisible4 = useIsVisible(ref4);
   return (
     <div
-      id="experience"
+      name="experience"
       className="w-full h-screen bg-[#0a192f] text-gray-300"
-      ref={ref}
     >
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="sm:text-right pb-8 pl-4">
@@ -99,6 +98,6 @@ const Experience = forwardRef(function Experience(_props, ref) {
       </div>
     </div>
   );
-});
+}
 
 export default Experience;
