@@ -16,7 +16,7 @@ function Experience() {
       name="experience"
       className="w-full h-screen bg-[#0a192f] text-gray-300"
     >
-      <div className="flex flex-col justify-center items-center w-full h-full">
+      <div className="flex flex-col justify-center items-center ">
         <div className="sm:text-right pb-8 pl-4">
           <p className="text-4xl font-bold inline border-b-4 border-[#209CEE]">
             Experience
@@ -29,7 +29,7 @@ function Experience() {
               ref={ref1}
               src={myPhoto}
               alt="my-photo"
-              className={`rounded-lg shadow-xl max-h-[500px] w-auto ${
+              className={`rounded-lg shadow-xl max-h-[400px] w-auto ${
                 isVisible1
                   ? "animate-fade animate-once animate-delay-[250ms]"
                   : ""

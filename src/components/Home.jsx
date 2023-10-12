@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { useIsVisible } from "../utility/useIsVisible";
+import { Link } from "react-scroll";
 
 export default function Home() {
   const ref1 = useRef();
@@ -35,12 +36,14 @@ export default function Home() {
           industrial automation solutions.
         </p>
         <div>
-          <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#209CEE] hover:border-[#209CEE]">
-            View More
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3" />
-            </span>
-          </button>
+          <Link to="about" smooth={true} duration={300}>
+            <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#209CEE] hover:border-[#209CEE] rounded">
+              View More
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight className="ml-3" />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

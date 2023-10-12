@@ -34,7 +34,7 @@ export default function NavBar() {
         <Link to="experience" smooth={true} duration={300}>
           <li className="px-4 cursor-pointer hover:text-[#209CEE]">
             Experience
-          </li>{" "}
+          </li>
         </Link>
 
         <Link to="skills" smooth={true} duration={300}>
@@ -42,7 +42,7 @@ export default function NavBar() {
         </Link>
 
         <Link to="contact" smooth={true} duration={300}>
-          <li className="px-4 cursor-pointer hover:text-[#209CEE]">Contact</li>{" "}
+          <li className="px-4 cursor-pointer hover:text-[#209CEE]">Contact</li>
         </Link>
       </ul>
 
